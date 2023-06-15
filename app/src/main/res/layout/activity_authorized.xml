@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAuthorized"
+    android:background="@color/white">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/etLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/etPassword"
+            android:layout_marginTop="30dp"
+            android:hint="Логин" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="Пароль"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/authorized"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/etLogin"
+            android:text="Требуется авторизация"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="31dp"
+            />
+
+        <TextView
+            android:id="@+id/studentData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Разработчик: Шепталина Алена\n группа РИБО-02-21"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            />
+
+        <Button
+            android:id="@+id/btnEnter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/etPassword"
+            android:backgroundTint="@android:color/holo_purple"
+            android:text="Войти"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:layout_width="440dp"
+            android:layout_height="440dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/authorizedbackgroudstyle"
+            android:translationX="-270sp"
+            android:translationY="360sp" />
+        <ImageView
+            android:layout_width="440dp"
+            android:layout_height="440dp"
+            android:translationY="-360sp"
+            android:translationX="270sp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/authorizedbackgroudstyle"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

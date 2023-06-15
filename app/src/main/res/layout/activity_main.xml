@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/questionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/question"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_marginLeft="16dp"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Далее"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/gray_"
+            android:layout_below="@id/radio_group"
+
+                />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textColor="@color/black"
+            android:layout_marginLeft="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="320dp"
+
+            >
+
+                <RadioButton
+                    android:id="@+id/radio_button_1"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_order"
+                    android:text="Вариант 1" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/button_order"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Вариант 2" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_order"
+                    android:layout_centerHorizontal="true"
+                    android:text="Вариант 3" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_order"
+                    android:layout_centerHorizontal="true"
+                    android:text="Вариант 4" />
+        </RadioGroup>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/another_blue" />
+
+
+
+</RelativeLayout>
+
+    <!--    <Button-->
+<!--        android:id="@+id/btn_one"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Button"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_above="@+id/btn_two"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_two"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Button"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_above="@+id/btn_three"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_three"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Button"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_above="@+id/btn_four"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_four"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Button"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:layout_alignParentBottom="true"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_question"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="Question"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="25sp"-->
+<!--        android:paddingTop="20sp"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:layout_above="@+id/btn_one"-->
+<!--        android:layout_alignParentTop="true"/>-->
